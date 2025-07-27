@@ -3,194 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>M&M Sports | Tienda Deportiva</title>
+  <title>M&M Sports | Donde Empieza Tu Pasión</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    /* ...Estilos básicos + media queries aquí... */
     body {
       font-family: 'Montserrat', sans-serif;
       background-color: #f4f4f4;
+      margin: 0;
     }
 
-    header {
+    .logo-redes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
       background: #0b3d91;
       color: white;
-      text-align: center;
-      padding: 30px 15px;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    .logo-redes img {
+      height: 50px;
+    }
+
+    .redes a {
+      margin-left: 10px;
+    }
+
+    .slider-texto {
+      padding: 40px 20px;
+      background-color: #133b5c;
+      color: white;
+      text-align: center;
+    }
+
+    .slider-texto h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .slider-texto p {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.6;
     }
 
     nav {
-      background: #133b5c;
+      background: #0a2c66;
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      padding: 10px;
+      justify-content: center;
+      padding: 10px 0;
     }
 
     nav a {
       color: white;
-      margin: 10px 20px;
+      margin: 0 15px;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: bold;
     }
 
-    /* Slider */
-    .slider {
-      width: 100%;
-      overflow: hidden;
-      max-height: 400px;
-    }
-
-    .slider img {
-      width: 100%;
-      animation: slide 12s infinite;
-    }
-
-    @keyframes slide {
-      0%, 33% {content: url('https://via.placeholder.com/1200x400?text=Bienvenido+a+M%26M+Sports');}
-      34%, 66% {content: url('https://via.placeholder.com/1200x400?text=Equipamiento+Profesional');}
-      67%, 100% {content: url('https://via.placeholder.com/1200x400?text=Todo+para+tu+deporte');}
-    }
-
-    /* Productos */
-    .productos {
-      padding: 40px 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background: white;
-    }
-
-    .producto {
-      background: #fff;
-      border-radius: 10px;
-      margin: 15px;
-      padding: 15px;
-      width: 230px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-      text-align: center;
-    }
-
-    .producto:hover {
-      transform: scale(1.05);
-    }
-
-    .producto img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .producto h3 {
-      margin: 10px 0 5px;
-    }
-
-    .producto p {
-      color: #0b3d91;
-      font-weight: bold;
-      margin: 5px 0;
-    }
-
-    /* WhatsApp */
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-
-    .whatsapp img {
-      width: 50px;
-      height: 50px;
-    }
-
-    /* Footer */
     footer {
       background: #0b3d91;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
 
-    @media screen and (max-width: 600px) {
-      .producto {
-        width: 90%;
-      }
-
-      header h1 {
-        font-size: 1.8rem;
-      }
-    }
+    /* Agrega estilos adicionales como el slider, productos, suplementos, etc. */
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>M&M Sports</h1>
-    <p>¡Tu tienda online de implementos deportivos para todos los deportes!</p>
+  <!-- Logo y redes sociales -->
+  <div class="logo-redes">
+    <img src="tu-logo.png" alt="Logo M&M Sports">
+    <div class="redes">
+      <a href="https://wa.me/573001112233" target="_blank">WhatsApp</a>
+      <a href="https://instagram.com/tucuenta" target="_blank">Instagram</a>
+      <a href="mailto:mmsportsstore@gmail.com">Gmail</a>
+      <a href="https://facebook.com/tucuenta" target="_blank">Facebook</a>
+    </div>
+  </div>
+
+  <!-- Rótulo -->
+  <header class="slider-texto">
+    <h2>Bienvenidos a M&M Sports – Donde Empieza Tu Pasión por el Deporte</h2>
+    <p>🎯¿Estás listo para llevar tu entrenamiento al siguiente nivel?... (texto completo)</p>
   </header>
 
+  <!-- Menú de navegación -->
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#productos">Productos</a>
+    <a href="#suplementos">Suplementos</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#carrito">Carrito</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
-  <!-- Slider -->
-  <section class="slider" id="inicio">
-    <img src="https://via.placeholder.com/1200x400?text=Bienvenido+a+M%26M+Sports" alt="Slider Deportes">
+  <!-- Slider de imágenes -->
+  <section id="inicio">
+    <img id="slider-img" src="..." alt="Slider Comercial" style="width:100%; max-height:400px;">
   </section>
 
-  <!-- Productos -->
-  <section class="productos" id="productos">
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x200?text=Balón+Fútbol" alt="Balón">
-      <h3>Balón de Fútbol Adidas</h3>
-      <p>$25.00</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x200?text=Guantes+Boxeo" alt="Guantes">
-      <h3>Guantes de Boxeo Everlast</h3>
-      <p>$45.00</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x200?text=Raqueta+Tenis" alt="Raqueta">
-      <h3>Raqueta de Tenis Wilson</h3>
-      <p>$60.00</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x200?text=Pelota+Vóley" alt="Pelota">
-      <h3>Pelota de Vóley Mikasa</h3>
-      <p>$30.00</p>
-    </div>
-    <div class="producto">
-      <img src="https://via.placeholder.com/200x200?text=Gafas+Natación" alt="Gafas">
-      <h3>Gafas de Natación Speedo</h3>
-      <p>$15.00</p>
-    </div>
+  <!-- Productos por deporte -->
+  <section id="productos">
+    <h2>Productos Deportivos</h2>
+    <!-- Aquí colocarás el menú por deportes con subcategorías e implementación -->
   </section>
 
-  <!-- Botón WhatsApp -->
-  <a class="whatsapp" href="https://wa.me/573001112233?text=Hola%2C%20estoy%20interesado%20en%20productos%20de%20M%26M%20Sports" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-  </a>
+  <!-- Suplementos nutricionales -->
+  <section id="suplementos">
+    <h2>Suplementos Nutricionales</h2>
+    <!-- Lista de suplementos, descripción, tamaños, precios -->
+  </section>
 
-  <!-- Footer -->
+  <!-- Catálogo completo -->
+  <section id="catalogo">
+    <h2>Catálogo General</h2>
+    <!-- Todo el inventario de productos, agrupado por tipo -->
+  </section>
+
+  <!-- Carrito de compras -->
+  <section id="carrito">
+    <h2>Carrito de Compras</h2>
+    <p>Haz tu pedido por <a href="https://wa.me/573001112233">WhatsApp</a> y coordina tu envío o retiro en tienda.</p>
+    <ul>
+      <li>🚚 Envío a Guayaquil, Quito o a nivel nacional</li>
+      <li>📍 Retiro en: Sauces 4, Guayaquil</li>
+    </ul>
+  </section>
+
+  <!-- Información de contacto -->
   <footer id="contacto">
+    <p>📞 0959665223 | 📧 mmsportsstore@gmail.com</p>
+    <p>📍 Ecuador - Guayas - Guayaquil - Sauces 4, Rodrigo Icaza Cornejo, Bloque 83</p>
     <p>&copy; 2025 M&M Sports. Todos los derechos reservados.</p>
-    <p>Contáctanos por WhatsApp para pedidos personalizados.</p>
   </footer>
+
+  <!-- Script del slider -->
+  <script>
+    const sliderImages = [
+      'https://via.placeholder.com/1200x400?text=Bienvenido+a+M%26M+Sports',
+      'https://via.placeholder.com/1200x400?text=Implementos+Profesionales',
+      'https://via.placeholder.com/1200x400?text=Deportes+para+todos'
+    ];
+    let currentIndex = 0;
+    const sliderImg = document.getElementById('slider-img');
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % sliderImages.length;
+      sliderImg.src = sliderImages[currentIndex];
+    }, 4000);
+  </script>
 
 </body>
 </html>
