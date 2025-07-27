@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Deportiva</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0d47a1;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #1565c0;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .producto {
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Implementos Deportivos - Tu tienda online</h1>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <main class="productos">
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Balón" alt="Balón de fútbol">
+      <h3>Balón de fútbol</h3>
+      <p>$20.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Guantes" alt="Guantes de boxeo">
+      <h3>Guantes de boxeo</h3>
+      <p>$35.00</p>
+    </div>
+    <div class="producto">
+      <img src="https://via.placeholder.com/200x150?text=Pesas" alt="Pesas">
+      <h3>Pesas</h3>
+      <p>$50.00</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tienda Deportiva. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
 
